@@ -1,0 +1,42 @@
+import groovy.util.*
+import groovy.json.JsonSlurper
+
+def res, obj
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+File file = new File(projectDir)
+def firstLevelDir = file.getParent()
+
+def filePath = firstLevelDir + "\\SoapUI\\User.csv"
+context.fileReader = new BufferedReader(new FileReader(filePath))
+
+rows = context.fileReader.readLines()
+int n = rows.size()
+
+for(int i = 1; i < n; i++){
+	row = rows[i]
+	String[] data = row.split(",")  //Mike, QA
+
+	//Set the property value
+	testRunner.testCase.getTestStepByName("Properties").setPropertyValue("Name", data[0])
+	testRunner.testCase.getTestStepByName("Properties").setPropertyValue("Role", data[1])
+
+	//run the step
+	testRunner.runTestStepByName("POST-CreateUser")
+
+	res = context.expand('${POST-CreateUser#Response}')
+	obj = new JsonSlurper().parseText(res)
+
+	assert obj.name == data[0]
+	assert obj.job == data[1]
+}
+
+
+
+
+
+
+
+
+
+
