@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="471b4c1c-0ac1-4a3f-ab8c-1559624f0962" activeEnvironment="Default" name="API Testing" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="&lt;all>"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="true"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files (x86)\SmartBear\SoapUI-5.5.0\bin"/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="D:\Manoj\API Testing Training\SoapUI"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="17c69975-6b3e-4810-9268-4c7670716384" wadlVersion="http://wadl.dev.java.net/2009/02" name="Get users" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="Users" path="/api/users" id="b84fb739-1cd9-4ae6-86c1-804e010a2563"><con:settings/><con:parameters><con:parameter><con:name>page</con:name><con:value>2</con:value><con:style>QUERY</con:style><con:default>2</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="GetUsers" id="2632edae-55d2-43ad-b38e-97c277c1efb2" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element></con:representation><con:request name="GET-Users" id="e4280c7f-a2a0-4820-bd0a-3e26687ba6ac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="3d954a20-afd4-4e4d-8e25-214e367b1a20" wadlVersion="http://wadl.dev.java.net/2009/02" name="Create user" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="Users" path="/api/users" id="62f41d46-edaa-4d16-af2d-b9e62ae23740"><con:settings/><con:parameters/><con:method name="CreateUser" id="06b82a4c-16af-4ef7-8163-f34363d5cf16" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element></con:representation><con:request name="POST-CreateUser" id="b3695864-b3b2-4ffb-bde4-27003ae493f8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="0c91ecfb-9f84-4c91-bbeb-68448bcc977d" wadlVersion="http://wadl.dev.java.net/2009/02" name="Update users" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://reqres.in</con:endpoint></con:endpoints><con:resource name="2" path="/api/users/" id="67c4753d-4bff-41c6-8aa7-57b25c764ca7"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value/><con:style>HEADER</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Accept</con:name><con:style>QUERY</con:style></con:parameter></con:parameters><con:method name="UpdateUser" id="e4cdbacb-a3cb-4fec-8907-6f78ee3b0a64" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:ns="https://reqres.in/api/users/957">ns:Response</con:element></con:representation><con:request name="PUT-Update user" id="b6dd2b31-aa93-460f-b888-0b0bfcb8e821" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request>{
+    "name": "morpheus",
+    "job": "zion resident"
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
+  <con:entry key="Accept" value="123"/>
+  <con:entry key="id" value="12"/>
+</con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>Accept</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="ee5ccfe5-6dfe-4003-814a-96c2b9d638a0" name="Regression Testsuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="69fe515b-d711-42fd-bc28-1f4a29a86819" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get users" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="dbe2a7ae-b7ca-41f4-ba62-c07b49366345"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>pageNumber</con:name><con:value>2</con:value></con:property><con:property><con:name>first_name</con:name><con:value>Michael</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="GET-Get users" id="cd8fb1a0-0b67-4c42-9179-a8a07de2f039"><con:settings/><con:config service="Get users" resourcePath="/api/users" methodName="GetUsers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET-Get users" id="e4280c7f-a2a0-4820-bd0a-3e26687ba6ac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#AppUrl}</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="JsonPath Match" id="f2f9bee2-97b3-413d-b230-fb051c1a11d7" name="content-users-page"><con:configuration><path>$.page</path><content>${Properties#pageNumber}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="67262271-98f9-42b5-9a3b-d3d7772d10fd" name="structure-users-page"><con:configuration><path>$.page</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="f2f9bee2-97b3-413d-b230-fb051c1a11d7" name="content-users-per_page"><con:configuration><path>$.per_page</path><content>6</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="67262271-98f9-42b5-9a3b-d3d7772d10fd" name="structure-users-per_page"><con:configuration><path>$.per_page</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="f2f9bee2-97b3-413d-b230-fb051c1a11d7" name="users-data-id"><con:configuration><path>$.data[?(@.first_name == 'Michael')].id</path><content>[7]</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="40c138e6-cce5-42cd-995d-c1581b343403" name="JsonPath RegEx Match"><con:configuration><path>$.total</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>^[0-9]{2}</regEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="523d9cac-d7ee-4cba-aebd-4de8895cb8be" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9ac29878-3d09-4a71-95dd-ab15620b695a" name="Script Assertion"><con:configuration><scriptText>//log.info "Hello SoapUI"
+
+//context
+//def res = context.expand('${GET-Get users#response}')
+//log.info res
+
+//messageExchange: exchange of a request and response message
+
+//JsonSlurper: 
+
+import groovy.json.JsonSlurper
+
+def content = messageExchange.response.responseContent
+
+def res = new JsonSlurper().parseText(content)
+
+//log.info res
+
+assert res.page == 2
+assert res.data[0].id == 7
+
+
+
+
+
+
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="${Properties#pageNumber}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy basics - Variables" id="2ccb28dc-4da7-4f54-a9a0-c5bfc7461b45" disabled="true"><con:settings/><con:config><script>//Variables
+
+def name = "User"
+def num = 1
+def maxValue = 10.25
+
+def minValue
+minValue  = 2
+
+def a = 20
+def b = 30
+
+def sum = a + b
+log.info "Sum of two numbers is: " + sum
+
+def testStep = testRunner.testCase.getTestStepByName("GET-Get users")
+log.info testStep</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy basics - Control statements" id="79d4bc14-c918-45ef-a873-079a5a0ddf87" disabled="true"><con:settings/><con:config><script>//if else 
+//Nested if else
+
+def user1 = "Mike"
+def user2 = "Mike"
+
+if (user1 != user2){
+	log.info "Names are different"
+}
+else if(user1 == user2) {
+	log.info "User names are same"
+}
+else {
+	
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy basics - Loops" id="113fa110-ec5c-4a42-8375-1ad428a46ae8" disabled="true"><con:settings/><con:config><script>//log.info 1
+
+def x = ""
+
+for(i=10; i>=1; i--){
+	x = x + i
+	//log.info x
+}
+
+//log.info x
+
+/*While Loop*/
+//==============
+
+def i = 1
+def j = 10
+
+while(i &lt;= j){
+	if(i==2){
+		log.info i
+	     i = i + 1
+	}
+	else{
+		//do this	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy basics - lists" id="622134db-7607-4fb4-950f-b34a3436baf9" disabled="true"><con:settings/><con:config><script>
+def sum = 10
+//people name of your comp
+
+//Lists:
+def emp = ["Michael", "Mike", "ABC", 10]
+
+//log.info emp[4]
+
+//To Add new data
+emp.add("xyz")
+emp.add(0, "QWERT")
+//log.info emp[4]
+
+//get size of list
+def n = emp.size()
+
+for(i = 0; i &lt; n; i++){
+	log.info emp[i]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy basics - maps" id="1514b765-10ce-46f7-9e6f-e7e9436d27c8" disabled="true"><con:settings/><con:config><script>//Ranges: list of sequential values
+
+def num = 1..10  //1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+def n = num.size()
+//log.info num[4]
+
+/*for(i in num){
+	log.info i
+}*/
+
+num.each{i ->
+    log.info i
+	}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy basics - ranges" id="dac29945-b9be-4200-9721-e4304f5ba906" disabled="true"><con:settings/><con:config><script>//Maps: it store key value pair
+// emp1: ABC
+// emp2: DEF
+
+def movie = ['Brad':'Once upon a time in hollywood', 'Actor2': 'movie1']
+movie.put('Actor3','movie3')
+def n = movie.size()
+
+log.info n
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy script - TestRunner" id="9b0b6ded-05a0-43e0-afa0-f0c424409f72" disabled="true"><con:settings/><con:config><script>//TestRunner: testRunner object is the entry point to access SoapUI APIs related to
+//items, results etc
+
+//How to access properties from different level
+//Test Case
+def tcProp = testRunner.testCase.getPropertyValue("testCaseProp")
+log.info tcProp
+
+//Test Suite
+def tsProp = testRunner.testCase.testSuite.getPropertyValue("testSuiteProp")
+log.error tsProp
+
+//Project
+def prjProp = testRunner.testCase.testSuite.project.getPropertyValue("appUrl")
+log.warn prjProp
+
+//Global property
+def globalProp = com.eviware.soapui.SoapUI.globalProperties.getPropertyValue("gProp")
+log.info globalProp
+
+//Set properties at diff level
+def myTcProp = testRunner.testCase.setPropertyValue("testCaseProp2", "Test2")
+def myTsProp = testRunner.testCase.testSuite.setPropertyValue("testCaseProp3", "Test3")
+def myPrjProp = testRunner.testCase.testSuite.project.setPropertyValue("testCaseProp4", "Test4")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - JsonSulper" id="08306d48-4d46-4b64-80c3-0ff95deb4940" disabled="true"><con:settings/><con:config><script>//JsonSluper: is a class that parses JSON text content into groovy objects such as 
+//maps, lists
+
+//It has some methods parse: parseText, parseFile
+
+import groovy.json.JsonSlurper
+
+testRunner.runTestStepByName('GET-Get users')
+def res = context.expand('${GET-Get users#Response}')
+
+//Parse response
+def obj = new JsonSlurper().parseText(res)
+log.info obj.page
+log.info obj.per_page
+log.info obj.data[0].first_name
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - Step properties" id="0a734cc0-e450-4b7a-a3fb-a255015c690b" disabled="true"><con:settings/><con:config><script>def testStep = testRunner.testCase.testSteps["Properties"]
+
+if(testStep.getPropertyCount()>0){
+	for(prop in testStep.getPropertyList()){
+		log.info ("This property step has property: " +prop.getName() +
+		" with value: " + prop.getValue())
+	}
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - Utility" id="77520948-4ff5-46e3-a0e9-66f72e37a89a" disabled="true"><con:settings/><con:config><script>//count of test cases in a testsuite
+def testSuite = context.testCase.testSuite
+def count = testSuite.getTestCases().size()
+def testCaseName
+
+for(i in (0..count-1)){
+	log.info testSuite.getTestCaseAt(i).name
+	
+}
+
+def testStepCount = testRunner.testCase.getTestStepCount()
+log.info testStepCount
+
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script - Enable Disable" id="ef39db4b-034e-4ae9-99c9-cc9befc2b888" disabled="true"><con:settings/><con:config><script>def isDisabled = testRunner.testCase.getTestStepByName("GET-Get users").isDisabled()
+log.info isDisabled
+
+if(!isDisabled){
+	log.info ("Test step is disabled")
+}
+else{
+    testRunner.testCase.getTestStepByName("GET-Get users").setDisabled(true)	
+}
+
+
+</script></con:config></con:testStep><con:loadTest id="e9b48a72-621e-4c78-bfe6-d62fd927b649" name="LoadTest - Get users"><con:settings/><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type><con:config><testDelay>1000</testDelay><randomFactor>0.5</randomFactor></con:config></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:assertion type="Step Maximum" name="Step Maximum"><con:configuration><name>Step Maximum</name><min-requests>100</min-requests><max-value>2000</max-value><test-step>- Any -</test-step><max-errors>-1</max-errors></con:configuration></con:assertion><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:loadTest id="f930b592-29c8-474a-a124-d98a5cb3d767" name="LoadTest 2"><con:settings/><con:threadCount>5</con:threadCount><con:startDelay>0</con:startDelay><con:sampleInterval>250</con:sampleInterval><con:calculateTPSOnTimePassed>true</con:calculateTPSOnTimePassed><con:resetStatisticsOnThreadCountChange>true</con:resetStatisticsOnThreadCountChange><con:historyLimit>-1</con:historyLimit><con:testLimit>60</con:testLimit><con:limitType>TIME</con:limitType><con:loadStrategy><con:type>Simple</con:type></con:loadStrategy><con:assertion type="Step Status" name="Step Status"/><con:maxAssertionErrors>100</con:maxAssertionErrors><con:cancelExcessiveThreads>true</con:cancelExcessiveThreads><con:strategyInterval>500</con:strategyInterval></con:loadTest><con:properties><con:property><con:name>testCaseProp</con:name><con:value>Test1</con:value></con:property><con:property><con:name>testCaseProp2</con:name><con:value>Test2</con:value></con:property></con:properties><con:securityTest id="a40ec9cd-afa5-4342-b184-2b660e59c50e" name="SecurityTest - Get users" failOnError="false" failSecurityTestOnScanErrors="true"><con:settings/><con:testStepSecurityTest><con:testStepId>cd8fb1a0-0b67-4c42-9179-a8a07de2f039</con:testStepId><con:testStepSecurityScan type="CrossSiteScriptingScan" name="Cross Site Scripting" id="675de2a6-36f6-48f8-baa1-49694e5f9a50" applyForFailedStep="false" disabled="false" runOnlyOnce="true"><con:settings/><con:config xsi:type="con:CrossSiteScriptingScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:parameterExposureStrings>&lt;PLAINTEXT></con:parameterExposureStrings><con:parameterExposureStrings>';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//-->&lt;/SCRIPT>">'>&lt;SCRIPT>alert(String.fromCharCode(88,83,83))&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>'';!--"&lt;XSS>=&amp;{()}</con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC=http://soapui.org/xss.js>&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=javascript:alert('XSS')></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=JaVaScRiPt:alert('XSS')></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=javascript:alert(&amp;quot;XSS&amp;quot;)></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=`javascript:alert("RSnake says, 'XSS'")`></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG """>&lt;SCRIPT>alert("XSS")&lt;/SCRIPT>"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=javascript:alert(String.fromCharCode(88,83,83))></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>]]></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav	ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav&amp;#x09;ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav&amp;#x0A;ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav&amp;#x0D;ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>perl -e 'print "&lt;IMG SRC=java\0script:alert(\"XSS\")>";' > out</con:parameterExposureStrings><con:parameterExposureStrings>perl -e 'print "&lt;SCR\0IPT>alert(\"XSS\")&lt;/SCR\0IPT>";' > out</con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=" &amp;#14;  javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT/XSS SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BODY onload!#$%&amp;()*~+-_.,:;?@[/|\]^`=alert("XSS")></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT/SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;&lt;SCRIPT>alert("XSS");//&lt;&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC=http://soapui.org/xss.js?&lt;B></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC=//ha.ckers.org/.j></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="javascript:alert('XSS')"</con:parameterExposureStrings><con:parameterExposureStrings>&lt;iframe src=http://soapui.org/scriptlet.html &lt;</con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT>a=/XSS/alert(a.source)&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>\";alert('XSS');//</con:parameterExposureStrings><con:parameterExposureStrings>&lt;/TITLE>&lt;SCRIPT>alert("XSS");&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BODY BACKGROUND="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BODY ONLOAD=alert('XSS')></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG DYNSRC="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG LOWSRC="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BGSOUND SRC="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BR SIZE="&amp;{alert('XSS')}"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;LAYER SRC="http://soapui.org/scriptlet.html">&lt;/LAYER></con:parameterExposureStrings><con:parameterExposureStrings>&lt;LINK REL="stylesheet" HREF="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;LINK REL="stylesheet" HREF="http://soapui.org/xss.css"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>@import'http://soapui.org/xss.css';&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="Link" Content="&lt;http://soapui.org/xss.css>; REL=stylesheet"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>BODY{-moz-binding:url("http://soapui.org/xssmoz.xml#xss")}&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;XSS STYLE="behavior: url(xss.htc);"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>li {list-style-image: url("javascript:alert('XSS')");}&lt;/STYLE>&lt;UL>&lt;LI>XSS</con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC='vbscript:msgbox("XSS")'></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="mocha:[code]"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="livescript:[code]"></con:parameterExposureStrings><con:parameterExposureStrings>ï¿½scriptï¿½alert(ï¿½XSSï¿½)ï¿½/scriptï¿½</con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="refresh" CONTENT="0; URL=http://;URL=javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IFRAME SRC="javascript:alert('XSS');">&lt;/IFRAME></con:parameterExposureStrings><con:parameterExposureStrings>&lt;FRAMESET>&lt;FRAME SRC="javascript:alert('XSS');">&lt;/FRAMESET></con:parameterExposureStrings><con:parameterExposureStrings>&lt;TABLE BACKGROUND="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;TABLE>&lt;TD BACKGROUND="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="background-image: url(javascript:alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="background-image: url(&amp;#1;javascript:alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="width: expression(alert('XSS'));"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>@im\port'\ja\vasc\ript:alert("XSS")';&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;XSS STYLE="xss:expression(alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:&amp;#101;x&amp;#x2F;*XSS*//*/*/pression(alert("XSS"))'></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE TYPE="text/javascript">alert('XSS');&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>.XSS{background-image:url("javascript:alert('XSS')");}&lt;/STYLE>&lt;A CLASS=XSS>&lt;/A></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;!--[if gte IE 4]>&lt;SCRIPT>alert('XSS');&lt;/SCRIPT>&lt;![endif]--></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BASE HREF="javascript:alert('XSS');//"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;OBJECT TYPE="text/x-scriptlet" DATA="http://soapui.org/scriptlet.html">&lt;/OBJECT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;OBJECT classid=clsid:ae24fdae-03c6-11d1-8b76-0080c744f389>&lt;param name=url value=javascript:alert('XSS')>&lt;/OBJECT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;EMBED SRC="http://soapui.org/xss.swf" AllowScriptAccess="always">&lt;/EMBED></con:parameterExposureStrings><con:parameterExposureStrings>&lt;EMBED SRC="data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pjwvc3ZnPg==" type="image/svg+xml" AllowScriptAccess="always">&lt;/EMBED></con:parameterExposureStrings><con:parameterExposureStrings>a="get";b="URL(\"";c="javascript:";d="alert('XSS');\")";eval(a+b+c+d);</con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<XML ID=I><X><C><![CDATA[<IMG SRC="javas]]]]>><![CDATA[<![CDATA[cript:alert('XSS');">]]]]>><![CDATA[</C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<XML ID="xss"><I><B>&lt;IMG SRC="javas<!-- -->cript:alert('XSS')"&gt;</B></I></XML><SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"></SPAN>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<HTML><BODY><?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"><?import namespace="t" implementation="#default#time2"><t:set attributeName="innerHTML" to="XSS&lt;SCRIPT DEFER&gt;alert(&quot;XSS&quot;)&lt;/SCRIPT&gt;"></BODY></HTML>]]></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC="http://soapui.org/xss.jpg">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;? echo('&lt;SCR)';echo('IPT>alert("XSS")&lt;/SCRIPT>'); ?></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="http://soapui.org/somecommand.php?somevariables=maliciouscode"></con:parameterExposureStrings><con:parameterExposureStrings>Redirect 302 /a.jpg http://soapui.org/admin.asp&amp;deleteuser</con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="Set-Cookie" Content="USERID=&amp;lt;SCRIPT&amp;gt;alert('XSS')&amp;lt;/SCRIPT&amp;gt;"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;HEAD>&lt;META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-7"> &lt;/HEAD>+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-</con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=">" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT =">" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=">" '' SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT "a='>'" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=`>` SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=">'>" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT>document.write("&lt;SCRI");&lt;/SCRIPT>PT SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings></con:config><con:assertion type="CrosSiteScript" id="f0d3f0c9-8918-4d57-a8c4-ae1516134b3b" name="Cross Site Scripting Detection"><con:configuration/></con:assertion><con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:parameters label="username" parameterName="Username" xpath="" checked="true"/><con:parameters label="password" parameterName="Password" xpath="" checked="true"/></con:checkedParameters><con:executionStrategy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:strategy>ONE_BY_ONE</con:strategy><con:delay>100</con:delay></con:executionStrategy></con:testStepSecurityScan></con:testStepSecurityTest><con:properties/></con:securityTest></con:testCase><con:testCase id="869040a8-9aba-4be3-bc90-782a79b3416c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Users 1 - Request 1" id="bf23b587-b143-48e0-8f9e-cc273db61556"><con:settings/><con:config service="Get users" resourcePath="/api/users" methodName="GetUsers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Users 1 - Request 1" id="e4280c7f-a2a0-4820-bd0a-3e26687ba6ac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="2" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f4f8de4a-fff3-44df-bd93-20402be25fbb" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Create user" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="76df00a6-1642-44c0-b63f-0326bcc7881c"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Name</con:name><con:value>Test User</con:value></con:property><con:property><con:name>Role</con:name><con:value>QA</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="POST-CreateUser" id="d4c94961-3e98-4c95-ba82-0a5cbe70e3ef"><con:settings/><con:config service="Create user" resourcePath="/api/users" methodName="CreateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST-CreateUser" id="b3695864-b3b2-4ffb-bde4-27003ae493f8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#appUrl}</con:endpoint><con:request>{
+    "name": "${Properties#Name}",
+    "job": "${Properties#Role}"
+}</con:request><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:securityTest id="e9949b9c-c423-4fe1-a0f6-4ca3715826d0" name="SecurityTest - Create user" failOnError="true"><con:settings/><con:testStepSecurityTest><con:testStepId>d4c94961-3e98-4c95-ba82-0a5cbe70e3ef</con:testStepId><con:testStepSecurityScan type="CrossSiteScriptingScan" name="Cross Site Scripting" id="ff4f48d6-c0cb-497e-8ff3-94602ac92a48" applyForFailedStep="false" disabled="false" runOnlyOnce="true"><con:settings/><con:config xsi:type="con:CrossSiteScriptingScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:parameterExposureStrings>&lt;PLAINTEXT></con:parameterExposureStrings><con:parameterExposureStrings>';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//-->&lt;/SCRIPT>">'>&lt;SCRIPT>alert(String.fromCharCode(88,83,83))&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>'';!--"&lt;XSS>=&amp;{()}</con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC=http://soapui.org/xss.js>&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=javascript:alert('XSS')></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=JaVaScRiPt:alert('XSS')></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=javascript:alert(&amp;quot;XSS&amp;quot;)></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=`javascript:alert("RSnake says, 'XSS'")`></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG """>&lt;SCRIPT>alert("XSS")&lt;/SCRIPT>"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=javascript:alert(String.fromCharCode(88,83,83))></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>]]></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav	ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav&amp;#x09;ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav&amp;#x0A;ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="jav&amp;#x0D;ascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>perl -e 'print "&lt;IMG SRC=java\0script:alert(\"XSS\")>";' > out</con:parameterExposureStrings><con:parameterExposureStrings>perl -e 'print "&lt;SCR\0IPT>alert(\"XSS\")&lt;/SCR\0IPT>";' > out</con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC=" &amp;#14;  javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT/XSS SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BODY onload!#$%&amp;()*~+-_.,:;?@[/|\]^`=alert("XSS")></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT/SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;&lt;SCRIPT>alert("XSS");//&lt;&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC=http://soapui.org/xss.js?&lt;B></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC=//ha.ckers.org/.j></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="javascript:alert('XSS')"</con:parameterExposureStrings><con:parameterExposureStrings>&lt;iframe src=http://soapui.org/scriptlet.html &lt;</con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT>a=/XSS/alert(a.source)&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>\";alert('XSS');//</con:parameterExposureStrings><con:parameterExposureStrings>&lt;/TITLE>&lt;SCRIPT>alert("XSS");&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BODY BACKGROUND="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BODY ONLOAD=alert('XSS')></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG DYNSRC="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG LOWSRC="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BGSOUND SRC="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BR SIZE="&amp;{alert('XSS')}"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;LAYER SRC="http://soapui.org/scriptlet.html">&lt;/LAYER></con:parameterExposureStrings><con:parameterExposureStrings>&lt;LINK REL="stylesheet" HREF="javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;LINK REL="stylesheet" HREF="http://soapui.org/xss.css"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>@import'http://soapui.org/xss.css';&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="Link" Content="&lt;http://soapui.org/xss.css>; REL=stylesheet"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>BODY{-moz-binding:url("http://soapui.org/xssmoz.xml#xss")}&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;XSS STYLE="behavior: url(xss.htc);"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>li {list-style-image: url("javascript:alert('XSS')");}&lt;/STYLE>&lt;UL>&lt;LI>XSS</con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC='vbscript:msgbox("XSS")'></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="mocha:[code]"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="livescript:[code]"></con:parameterExposureStrings><con:parameterExposureStrings>ï¿½scriptï¿½alert(ï¿½XSSï¿½)ï¿½/scriptï¿½</con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="refresh" CONTENT="0;url=javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="refresh" CONTENT="0; URL=http://;URL=javascript:alert('XSS');"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IFRAME SRC="javascript:alert('XSS');">&lt;/IFRAME></con:parameterExposureStrings><con:parameterExposureStrings>&lt;FRAMESET>&lt;FRAME SRC="javascript:alert('XSS');">&lt;/FRAMESET></con:parameterExposureStrings><con:parameterExposureStrings>&lt;TABLE BACKGROUND="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;TABLE>&lt;TD BACKGROUND="javascript:alert('XSS')"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="background-image: url(javascript:alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="background-image:\0075\0072\006C\0028'\006a\0061\0076\0061\0073\0063\0072\0069\0070\0074\003a\0061\006c\0065\0072\0074\0028.1027\0058.1053\0053\0027\0029'\0029"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="background-image: url(&amp;#1;javascript:alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;DIV STYLE="width: expression(alert('XSS'));"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>@im\port'\ja\vasc\ript:alert("XSS")';&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG STYLE="xss:expr/*XSS*/ession(alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;XSS STYLE="xss:expression(alert('XSS'))"></con:parameterExposureStrings><con:parameterExposureStrings>exp/*&lt;A STYLE='no\xss:noxss("*//*");xss:&amp;#101;x&amp;#x2F;*XSS*//*/*/pression(alert("XSS"))'></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE TYPE="text/javascript">alert('XSS');&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE>.XSS{background-image:url("javascript:alert('XSS')");}&lt;/STYLE>&lt;A CLASS=XSS>&lt;/A></con:parameterExposureStrings><con:parameterExposureStrings>&lt;STYLE type="text/css">BODY{background:url("javascript:alert('XSS')")}&lt;/STYLE></con:parameterExposureStrings><con:parameterExposureStrings>&lt;!--[if gte IE 4]>&lt;SCRIPT>alert('XSS');&lt;/SCRIPT>&lt;![endif]--></con:parameterExposureStrings><con:parameterExposureStrings>&lt;BASE HREF="javascript:alert('XSS');//"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;OBJECT TYPE="text/x-scriptlet" DATA="http://soapui.org/scriptlet.html">&lt;/OBJECT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;OBJECT classid=clsid:ae24fdae-03c6-11d1-8b76-0080c744f389>&lt;param name=url value=javascript:alert('XSS')>&lt;/OBJECT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;EMBED SRC="http://soapui.org/xss.swf" AllowScriptAccess="always">&lt;/EMBED></con:parameterExposureStrings><con:parameterExposureStrings>&lt;EMBED SRC="data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pjwvc3ZnPg==" type="image/svg+xml" AllowScriptAccess="always">&lt;/EMBED></con:parameterExposureStrings><con:parameterExposureStrings>a="get";b="URL(\"";c="javascript:";d="alert('XSS');\")";eval(a+b+c+d);</con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<XML ID=I><X><C><![CDATA[<IMG SRC="javas]]]]>><![CDATA[<![CDATA[cript:alert('XSS');">]]]]>><![CDATA[</C></X></xml><SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML></SPAN>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<XML ID="xss"><I><B>&lt;IMG SRC="javas<!-- -->cript:alert('XSS')"&gt;</B></I></XML><SPAN DATASRC="#xss" DATAFLD="B" DATAFORMATAS="HTML"></SPAN>]]></con:parameterExposureStrings><con:parameterExposureStrings><![CDATA[<HTML><BODY><?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"><?import namespace="t" implementation="#default#time2"><t:set attributeName="innerHTML" to="XSS&lt;SCRIPT DEFER&gt;alert(&quot;XSS&quot;)&lt;/SCRIPT&gt;"></BODY></HTML>]]></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT SRC="http://soapui.org/xss.jpg">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;? echo('&lt;SCR)';echo('IPT>alert("XSS")&lt;/SCRIPT>'); ?></con:parameterExposureStrings><con:parameterExposureStrings>&lt;IMG SRC="http://soapui.org/somecommand.php?somevariables=maliciouscode"></con:parameterExposureStrings><con:parameterExposureStrings>Redirect 302 /a.jpg http://soapui.org/admin.asp&amp;deleteuser</con:parameterExposureStrings><con:parameterExposureStrings>&lt;META HTTP-EQUIV="Set-Cookie" Content="USERID=&amp;lt;SCRIPT&amp;gt;alert('XSS')&amp;lt;/SCRIPT&amp;gt;"></con:parameterExposureStrings><con:parameterExposureStrings>&lt;HEAD>&lt;META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=UTF-7"> &lt;/HEAD>+ADw-SCRIPT+AD4-alert('XSS');+ADw-/SCRIPT+AD4-</con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=">" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT =">" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=">" '' SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT "a='>'" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=`>` SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT a=">'>" SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings><con:parameterExposureStrings>&lt;SCRIPT>document.write("&lt;SCRI");&lt;/SCRIPT>PT SRC="http://soapui.org/xss.js">&lt;/SCRIPT></con:parameterExposureStrings></con:config><con:assertion type="CrosSiteScript" id="f9e8fd40-43d4-4b53-92a3-8d09e5224da3" name="Cross Site Scripting Detection"><con:configuration/></con:assertion><con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:parameters label="req" parameterName="Request" xpath="" checked="true"/></con:checkedParameters><con:executionStrategy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:strategy>ALL_AT_ONCE</con:strategy><con:delay>100</con:delay></con:executionStrategy></con:testStepSecurityScan><con:testStepSecurityScan type="SQLInjectionScan" name="SQL Injection" id="705ff985-df68-461d-8556-b25e8c48c058" applyForFailedStep="false" disabled="false" runOnlyOnce="true"><con:settings/><con:config xsi:type="con:SQLInjectionScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:sqlInjectionStrings>' or '1'='1</con:sqlInjectionStrings><con:sqlInjectionStrings>'--</con:sqlInjectionStrings><con:sqlInjectionStrings>1'</con:sqlInjectionStrings><con:sqlInjectionStrings>admin'--</con:sqlInjectionStrings><con:sqlInjectionStrings>/*!10000%201/0%20*/</con:sqlInjectionStrings><con:sqlInjectionStrings>/*!10000 1/0 */</con:sqlInjectionStrings><con:sqlInjectionStrings>1/0</con:sqlInjectionStrings><con:sqlInjectionStrings>'%20o/**/r%201/0%20--</con:sqlInjectionStrings><con:sqlInjectionStrings>' o/**/r 1/0 --</con:sqlInjectionStrings><con:sqlInjectionStrings>;</con:sqlInjectionStrings><con:sqlInjectionStrings>'%20and%201=2%20--</con:sqlInjectionStrings><con:sqlInjectionStrings>' and 1=2 --</con:sqlInjectionStrings><con:sqlInjectionStrings>test�%20UNION%20select%201,%20@@version,%201,%201;�</con:sqlInjectionStrings><con:sqlInjectionStrings>test� UNION select 1, @@version, 1, 1;�</con:sqlInjectionStrings></con:config><con:assertion type="Sensitive Information Exposure" id="248c4268-f59f-47d3-8cc0-e7d6eb1ee0c2" name="Sensitive Information Exposure"><con:configuration/></con:assertion><con:assertion type="Valid HTTP Status Codes" id="3995db8a-be59-47c9-b4d8-d09215a67b2e" name="Valid HTTP Status Codes"><con:configuration><codes>200, 201, 202
+</codes></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="217b7561-39cf-4e00-9fcc-58247f8f2eb7" name="Invalid HTTP Status Codes"><con:configuration><codes>400, 500</codes></con:configuration></con:assertion><con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/><con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:parameters label="req" parameterName="Request" xpath="" checked="true"/></con:checkedParameters><con:executionStrategy xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:strategy>ALL_AT_ONCE</con:strategy><con:delay>100</con:delay></con:executionStrategy></con:testStepSecurityScan></con:testStepSecurityTest><con:properties/></con:securityTest></con:testCase><con:testCase id="59f10766-b4c4-4996-800a-b5d50ecd1912" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="E2E Test Case" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="d8c3a8cb-3c05-4548-8003-6f12e9fd0c65"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Name</con:name><con:value>morpheus</con:value></con:property><con:property><con:name>Role</con:name><con:value>QA</con:value></con:property><con:property><con:name>id</con:name><con:value>215</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="POST-CreateUser" id="c736fd8d-b159-48fe-8544-6d986e4fb985"><con:settings/><con:config service="Create user" resourcePath="/api/users" methodName="CreateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST-CreateUser" id="b3695864-b3b2-4ffb-bde4-27003ae493f8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#appUrl}</con:endpoint><con:request>{
+    "name": "${Properties#Name}",
+    "job": "${Properties#Role}"
+}</con:request><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="18053109-e9cc-491a-9d4f-86ad82f25328" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="c6e83dc2-baac-4c66-80bb-fae25221c162" name="Invalid HTTP Status Codes"><con:configuration><codes>401, 404, 500</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7cc893fc-113f-49be-ac93-6e8ee8786bfe" name="Contains"><con:configuration><token>QA</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="Transfer user id" id="9c8e700b-8cc3-4336-baf6-f741103ebbc1" disabled="true"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>POST-CreateUser</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>id</con:targetType><con:targetStep>Properties</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="transfer" name="Property Transfer" id="4ddcc893-b592-4890-a3db-d397732522b8"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>id</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>POST-CreateUser</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>Request</con:targetType><con:targetStep>PUT-Update user</con:targetStep><con:type>JSONPATH</con:type><con:targetTransferType>JSONPATH</con:targetTransferType><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="restrequest" name="PUT-Update user" id="7c90553f-4632-4146-9b9b-f0539e4f8756"><con:settings/><con:config service="Update users" resourcePath="/api/users/" methodName="UpdateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT-Update user" id="b6dd2b31-aa93-460f-b888-0b0bfcb8e821" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://reqres.in</con:endpoint><con:request>105</con:request><con:originalUri>https://reqres.in/api/users/957</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry><con:entry>Accept</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a8681f71-6c6a-49d1-9c91-e7ad654a98ec" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 5" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script" id="c46a89dd-dcfe-42ca-91c3-d448e387e693"><con:settings/><con:config><script>//Conditional execution:
+
+def num = 2
+
+if(num > 2){
+	testRunner.runTestStepByName("GET-Get users")
+} else{
+	testRunner.runTestStepByName("POST-CreateUser")
+}
+</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="2e71d8bd-4e02-4f4f-9f0e-619050f53d27"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Name</con:name><con:value>morpheus</con:value></con:property><con:property><con:name>Role</con:name><con:value>QA</con:value></con:property><con:property><con:name>id</con:name><con:value>215</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="GET-Get users" id="4f6b14c8-3865-4b2e-87d3-8b559a34c2b8" disabled="true"><con:settings/><con:config service="Get users" resourcePath="/api/users" methodName="GetUsers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GET-Get users" id="e4280c7f-a2a0-4820-bd0a-3e26687ba6ac" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#AppUrl}</con:endpoint><con:request/><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="JsonPath Match" id="f2f9bee2-97b3-413d-b230-fb051c1a11d7" name="content-users-page"><con:configuration><path>$.page</path><content>${Properties#pageNumber}</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="67262271-98f9-42b5-9a3b-d3d7772d10fd" name="structure-users-page"><con:configuration><path>$.page</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="f2f9bee2-97b3-413d-b230-fb051c1a11d7" name="content-users-per_page"><con:configuration><path>$.per_page</path><content>6</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="67262271-98f9-42b5-9a3b-d3d7772d10fd" name="structure-users-per_page"><con:configuration><path>$.per_page</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath Match" id="f2f9bee2-97b3-413d-b230-fb051c1a11d7" name="users-data-id"><con:configuration><path>$.data[?(@.first_name == 'Michael')].id</path><content>[7]</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="JsonPath RegEx Match" id="40c138e6-cce5-42cd-995d-c1581b343403" name="JsonPath RegEx Match"><con:configuration><path>$.total</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments><regEx>^[0-9]{2}</regEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="523d9cac-d7ee-4cba-aebd-4de8895cb8be" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="9ac29878-3d09-4a71-95dd-ab15620b695a" name="Script Assertion"><con:configuration><scriptText>//log.info "Hello SoapUI"
+
+//context
+//def res = context.expand('${GET-Get users#response}')
+//log.info res
+
+//messageExchange: exchange of a request and response message
+
+//JsonSlurper: 
+
+import groovy.json.JsonSlurper
+
+def content = messageExchange.response.responseContent
+
+def res = new JsonSlurper().parseText(content)
+
+//log.info res
+
+assert res.page == 2
+assert res.data[0].id == 7
+
+
+
+
+
+
+
+
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="page" value="${Properties#pageNumber}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>page</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="POST-CreateUser" id="0b9272af-dd75-4909-bd17-4070534966b5" disabled="true"><con:settings/><con:config service="Create user" resourcePath="/api/users" methodName="CreateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST-CreateUser" id="b3695864-b3b2-4ffb-bde4-27003ae493f8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#appUrl}</con:endpoint><con:request>{
+    "name": "${Properties#Name}",
+    "job": "${Properties#Role}"
+}</con:request><con:originalUri>https://reqres.in/api/users</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="18053109-e9cc-491a-9d4f-86ad82f25328" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="Invalid HTTP Status Codes" id="c6e83dc2-baac-4c66-80bb-fae25221c162" name="Invalid HTTP Status Codes"><con:configuration><codes>401, 404, 500</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" id="7cc893fc-113f-49be-ac93-6e8ee8786bfe" name="Contains"><con:configuration><token>QA</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="c35571cb-1981-4ded-958b-71794a92b6a2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Data Driven" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="45483314-cd94-42fc-ba2a-0b63f316c7dd"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>Name</con:name><con:value>Micheal</con:value></con:property><con:property><con:name>Role</con:name><con:value> Dev</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Groovy" id="32cff5f9-8643-4e5f-b8e9-7c295976bd61"><con:settings/><con:config><script>import groovy.util.*
+import groovy.json.JsonSlurper
+
+def res, obj
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+File file = new File(projectDir)
+def firstLevelDir = file.getParent()
+
+def filePath = firstLevelDir + "\\SoapUI\\User.csv"
+context.fileReader = new BufferedReader(new FileReader(filePath))
+
+rows = context.fileReader.readLines()
+int n = rows.size()
+
+for(int i = 1; i &lt; n; i++){
+	row = rows[i]
+	String[] data = row.split(",")  //Mike, QA
+
+	//Set the property value
+	testRunner.testCase.getTestStepByName("Properties").setPropertyValue("Name", data[0])
+	testRunner.testCase.getTestStepByName("Properties").setPropertyValue("Role", data[1])
+
+	//run the step
+	testRunner.runTestStepByName("POST-CreateUser")
+
+	res = context.expand('${POST-CreateUser#Response}')
+	obj = new JsonSlurper().parseText(res)
+
+	assert obj.name == data[0]
+	assert obj.job == data[1]
+}
+
+
+
+
+
+
+
+
+
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="POST-CreateUser" id="fa90cb5b-7021-4d61-b071-9d1a8e700dc0" disabled="true"><con:settings/><con:config service="Create user" resourcePath="/api/users" methodName="CreateUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST-CreateUser" id="b3695864-b3b2-4ffb-bde4-27003ae493f8" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${#Project#appUrl}</con:endpoint><con:request>{
+    "name": "${Properties#Name}",
+    "job": "${Properties#Role}"
+}</con:request><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>testSuiteProp</con:name><con:value>Test2</con:value></con:property><con:property><con:name>testCaseProp3</con:name><con:value>Test3</con:value></con:property></con:properties><con:setupScript>import com.google.common.collect.*;
+
+// Get a list of the test cases in the suite and partition them into batches of 10 using Google Guava
+def testCases = context.getTestSuite().getTestCaseList();
+def List&lt;List&lt;com.eviware.soapui.model.testsuite.TestCase>> testcasePartitions = Lists.partition(testCases, 3);
+
+// Loop through the partitions
+for (partition in testcasePartitions) {
+
+    // Loop through the test cases in each partition
+    for (testcase in partition) {
+
+        if (!testcase.isDisabled()) {
+            log.info("Running tests case " + testcase.getName());           
+
+            def properties = new com.eviware.soapui.support.types.StringToObjectMap ()
+            testcase.run(properties, false)         
+
+            // Check the outcomes here if required.
+        }
+    }
+}</con:setupScript></con:testSuite><con:properties><con:property><con:name>appUrl</con:name><con:value>https://reqres.in</con:value></con:property><con:property><con:name>testCaseProp4</con:name><con:value>Test4</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
